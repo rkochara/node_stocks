@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="stockData">
+    <head>
+        <title>Stock Data</title>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular.js"></script>
+        <script src="javascripts/app.js" type="text/javascript"></script> <!-- not created yet -->
+    </head>
+    <body >
+        <div ng-controller="myController">
+          <form ng-submit="submit()" >
+            <input type="submit" id="submitON" value="ON" />
+            <input type="submit" id="submitOFF" value="OFF" />
+          </form>
+         <ul ng-repeat="item in data">
+	       <li>Ticker: {{item.t}}, Price: {{item.l}}, Change: {{item.c}}, %Change: {{item.cp}}%</li>
+         </ul>
+        </div>
+    </body>
+</html>
