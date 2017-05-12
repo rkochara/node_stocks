@@ -3,8 +3,8 @@ To run myNodeProject app
 >cd /Users/dkondru/Desktop/sw/full_stack/projects/myNodeProject
 >npm start
 In a browser address bar type "localhost:3000"
-
-To start a brand new project from scratch (refer http://4dev.tech/2016/01/tutorial-integrating-angularjs-with-nodejs/)
+If you don't need browser: "node app.js"
+To start a brand new project from scratch 
 ------------------------------------------
 
 >npm install express-generator -g
